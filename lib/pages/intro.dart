@@ -1,3 +1,4 @@
+import 'package:applizombie/pages/api.dart';
 import 'package:applizombie/pages/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -86,7 +87,9 @@ class _IntroPageState extends State<IntroPage> {
             ),
             FloatingActionButton(
               onPressed: () {
-                _swipeRight();
+                Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) =>  TournoiPage()));
               },
               backgroundColor: Colors.transparent,
               child: Image.asset(
